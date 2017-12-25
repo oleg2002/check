@@ -1,0 +1,39 @@
+
+body{
+	margin: 0px;
+}
+
+#header{
+	background: #346699;
+	height: 100px;
+	min-width: 600px;
+}
+
+#menu{
+	width: 250px;
+	height: 500px;
+	background: #346611;
+	float: left;
+}
+
+#info{
+	background: #346633;
+	height: 500px;
+	margin-left: 250px;
+}
+
+#footer{
+	height: 100px;
+	background: #346677;
+}
+
+table{
+	border-radius: 50px 50px 50px 50px;
+}
+
+td{
+	border-radius: 50px 50px 50px 50px;
+}
+
+
+

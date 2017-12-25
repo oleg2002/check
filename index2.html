@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- для того, чтоб на телефоне сайт увеличился(увеличение всех компонент). адаптивность-->
+		<title>Index page</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+
+	</head>
+	<body style="padding-top: 70px;">
+		<div class="navbar navbar-default navbar-fixed-top"><!--nav - используется для навигации по сайту. по сути для создани менюшек--><!---->
+			<div class="container">
+				<div class="navbar-header"><!--Шапка сайта с названием и кнопкой, которая появится при сворачивании-->
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">MyProject</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<form action="authorization" method="POST" class="navbar-form navbar-right">
+						<div class="form-group"> <!--для того, чтоб между инпутами было расстояние-->
+							<input type="text" placeholder="Введите логин или email:" class="form-control"/><br>
+						</div>
+						<div class="form-group">
+							<input type="password" placeholder="Введите пароль:" class="form-control"/><br>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-success" type="submit" name="sub1" value="sub1">Войти</button>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid text-center" style="padding-top: 10px; font-size:30px;">
+				"Hello World!"
+			</div>
+		</nav>
+		<div class="container-fluid text-center">
+		<div class="jumbotron" style="min-height: 650px;">
+		<div id="main-div">
+			<div class="container"> 
+				<form action="FirstServlet" method="POST" class="form-horizontal">
+					<div class="row">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Придумайте логин:</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="login" id="login" placeholder="Поле для ввода логина"/>
+							</div>
+							<div class="col-sm-4">
+								
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Придумайте пароль:</label>
+							<div class="col-sm-4">
+								<input type="password" class="form-control" name="password" placeholder="Поле для ввода пароля"/>
+							</div>
+							<div class="col-sm-4">
+								
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Повторите пароль:</label>
+							<div class="col-sm-4">
+								<input type="password" class="form-control" name="repeatPassword" placeholder="Поле для ввода пароля"/>
+							</div>
+							<div class="col-sm-4">
+								
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Введите email:</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="email" placeholder="Поле для ввода e-mail"/>
+							</div>
+							<div class="col-sm-4">
+								
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Введите имя:</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="first_name" placeholder="Поле для ввода имени"/>
+							</div>
+							<div class="col-sm-4">
+								
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Введите фамилию:</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="second_name" placeholder="Поле для ввода фамилии"/>
+							</div>
+							<div class="col-sm-4">
+								
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-5">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="check1" required> Будешь хорошо себя вести?
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-5">
+								<button type="submit" class="btn btn-success">Зарегистрироваться</button>
+								<!-- <label onclick="doRegistration(this)">КНОПКА</label> -->
+							</div>
+						</div>
+						<div id="qwert">
+
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+		</div>
+		<footer>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid text-center" style="padding-top: 15px;">
+					&copy;2017 За!
+				</div>
+			</nav>
+		</footer>
+	</body>
+</html>
