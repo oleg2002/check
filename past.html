@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        $('#htmldrop').on('click', 'ul > select', function (e) {
+        $('#htmldrop').on('click', 'ul > select > option', function (e) {
             e.preventDefault();
             e.stopPropagation();
         });
@@ -43,13 +43,13 @@
                     <button type="submit" class="btn btn-default">Enter</button>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Returne</a></li>
+                    <li><a href="check.html">Returne</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row-fluid" style="height: 350px">
             <div class="col-sm-6" id="one">
                 <form action="textarea1.php" method="post">
                     <div id="htmldrop" class="dropdown">
@@ -81,19 +81,21 @@
                 </form>
             </div>
         </div>
-        <div class="row">
-            <form action="textarea1.php" method="post">
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">CSS</button>
-                    <ul class="dropdown-menu">
-                        <select name="select1">
-                            <option value="css">CSS</option>
-                            <option value="SCSS">SCSS</option>
-                        </select>
-                    </ul>
-                </div>
-                <textarea style="width: 100%; height: 300px" name="text"></textarea>
-            </form>
+        <div class="row-fluid">
+            <div class="col-sm-12">
+                <form action="textarea1.php" method="post">
+                    <textarea style="width: 100%; height: 300px; padding: 0px" name="text"></textarea>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">CSS</button>
+                        <ul class="dropdown-menu">
+                            <select name="select1">
+                                <option value="css">CSS</option>
+                                <option value="SCSS">SCSS</option>
+                            </select>
+                        </ul>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
